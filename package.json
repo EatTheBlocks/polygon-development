@@ -1,0 +1,53 @@
+{
+  "name": "nft-strength",
+  "version": "1.0.0",
+  "keywords": [
+    "polygon",
+    "react",
+    "uniswap",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "react-app:build": "yarn workspace nft-strength-app build --max-old-space-size=12288",
+    "react-app:eject": "yarn workspace nft-strength-app eject",
+    "react-app:start": "yarn workspace nft-strength-app start",
+    "react-app:test": "yarn workspace nft-strength-app test",
+    "build": "yarn workspace nft-strength-app build --max-old-space-size=12288",
+    "chain": "yarn workspace nft-strength-contracts chain",
+    "node": "yarn workspace nft-strength-contracts chain",
+    "test": "yarn workspace nft-strength-contracts test",
+    "start": "yarn workspace nft-strength-app start",
+    "compile": "yarn workspace nft-strength-contracts compile",
+    "deploy": "yarn workspace nft-strength-contracts deploy",
+    "watch": "yarn workspace nft-strength-contracts watch",
+    "accounts": "yarn workspace nft-strength-contracts accounts",
+    "balance": "yarn workspace nft-strength-contracts balance",
+    "send": "yarn workspace nft-strength-contracts send",
+    "ipfs": "yarn workspace nft-strength-app ipfs",
+    "surge": "yarn workspace nft-strength-app surge",
+    "s3": "yarn workspace nft-strength-app s3",
+    "ship": "yarn workspace nft-strength-app ship",
+    "generate": "yarn workspace nft-strength-contracts generate",
+    "account": "yarn workspace nft-strength-contracts account",
+    "mineContractAddress": "cd packages/hardhat && npx hardhat mineContractAddress",
+    "wallet": "cd packages/hardhat && npx hardhat wallet",
+    "fundedwallet": "cd packages/hardhat && npx hardhat fundedwallet",
+    "flatten": "cd packages/hardhat && npx hardhat flatten",
+    "upload": "yarn workspace nft-strength-contracts upload",
+    "mint": "yarn workspace nft-strength-contracts mint",
+    "theme": "yarn workspace nft-strength-app theme",
+    "watch-theme": "yarn workspace nft-strength-app watch"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat",
+      "**/hardhat/**"
+    ]
+  },
+  "dependencies": {}
+}
